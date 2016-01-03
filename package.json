@@ -12,8 +12,7 @@
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
-        "cjs-emitter": "1.*.*",
-        "spa-router": "spasdk/router"
+        "spa-component": "spasdk/component"
     },
     "keywords": [
         "spa",
