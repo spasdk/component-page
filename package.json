@@ -12,7 +12,7 @@
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
-        "spa-component": "spasdk/component"
+        "spa-component": "1.*.*"
     },
     "keywords": [
         "spa",
