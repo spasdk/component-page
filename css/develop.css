@@ -1,0 +1,12 @@
+/* spa-component-page: variables */
+/* spa-component-page: release */
+.component.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    overflow: hidden; }
+    .component.page.active {
+        visibility: inherit; }
