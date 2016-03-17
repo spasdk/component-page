@@ -35,7 +35,7 @@ function Page ( config ) {
     // sanitize
     config = config || {};
 
-    if ( DEBUG ) {
+    if ( DEVELOP ) {
         if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
         // init parameters checks
         if ( config.className && typeof config.className !== 'string' ) { throw new Error(__filename + ': wrong or empty config.className'); }
