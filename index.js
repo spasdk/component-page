@@ -35,6 +35,8 @@ function Page ( config ) {
     // sanitize
     config = config || {};
 
+    console.assert(typeof this === 'object', 'must be constructed via new');
+    
     if ( DEVELOP ) {
         if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
         // init parameters checks
