@@ -36,7 +36,7 @@ function Page ( config ) {
     config = config || {};
 
     console.assert(typeof this === 'object', 'must be constructed via new');
-    
+
     if ( DEVELOP ) {
         if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
         // init parameters checks
@@ -60,7 +60,7 @@ function Page ( config ) {
     this.activeComponent = null;
 
     // set default className if classList property empty or undefined
-    config.className = 'page ' + (config.className || '');
+    //config.className = 'page ' + (config.className || '');
 
     // parent constructor call
     Component.call(this, config);
@@ -81,6 +81,9 @@ function Page ( config ) {
 // inheritance
 Page.prototype = Object.create(Component.prototype);
 Page.prototype.constructor = Page;
+
+// set component name
+Page.prototype.name = 'spa-component-page';
 
 
 // public

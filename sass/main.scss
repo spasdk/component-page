@@ -1,18 +1,14 @@
 // @license The MIT License (MIT)
 // @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
 
-/* spa-component-page: release */
-.component.page {
-    width:      $width;
-    height:     $height;
-    position:   absolute;
-    left:       0;
-    top:        0;
-    visibility: hidden;
-    overflow:   hidden;
+@import "../node_modules/spa-component/sass/main";
+@import "body";
 
-    // only one active page is visible
-    &.active {
-        visibility: inherit
+.spa-component-page {
+    @include spa-component-release;
+    @include spa-component-page;
+
+    @if $DEVELOP {
+        @include spa-component-develop;
     }
 }
