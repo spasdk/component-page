@@ -1,6 +1,6 @@
 {
     "name": "spa-component-page",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Main full-screen component to build user interface.",
     "author": {
         "name": "Stanislav Kalashnik",
